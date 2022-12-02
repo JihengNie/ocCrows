@@ -1,0 +1,152 @@
+body {
+  background-color: #282c33;
+}
+
+.margin-bottom-add-2rem {
+  margin-bottom: 2rem;
+}
+
+.nav-bar-style {
+  margin-top: 1.5rem;
+  margin-left: 0;
+  font-size: 1.5rem;
+  color: white;
+  font-family: "Zen Kurenaido", "Courier New", Courier, monospace;
+}
+
+.logo-style {
+  position: relative;
+  top: 0.75rem;
+  left: 0.5rem;
+  height: 4.5rem;
+}
+
+.logo-holder {
+  color: #f39323;
+  font-size: 4rem;
+  margin: 0;
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+.fa-bars-style {
+  position: absolute;
+  color: white;
+  top: 3rem;
+  margin-right: 1rem;
+}
+
+.fa-location-dot {
+  margin-left: 1rem;
+}
+
+.fa-quote-left-style,
+.fa-quote-right-style {
+  color: lightgray;
+  margin: 0 0.5rem;
+}
+
+.team-desciption {
+  color: white;
+  font-family: "Fira Code", sans-serif;
+  word-spacing: 0.5rem;
+  padding: 0 3rem;
+  margin: 1rem 0;
+  font-size: 1.75rem;
+}
+
+.team-img-holder {
+  margin: 1rem 0;
+}
+
+.events-holder {
+  border: 2px solid white;
+  width: 20rem;
+  margin: auto;
+}
+
+.events-header {
+  border-bottom: 2px solid white;
+  padding: 1rem;
+  color: #abb2bf;
+  font-family: "Fira Code", sans-serif;
+  font-size: 1rem;
+}
+
+.events {
+  padding: 1rem;
+  padding-top: 0;
+  color: white;
+  font-family: "Fira Code", sans-serif;
+}
+
+.events h5 {
+  margin: 0.25rem 0;
+  color: #abb2bf;
+}
+
+footer {
+  color: #abb2bf;
+  margin-top: 5rem;
+  font-size: 0.75rem;
+}
+
+.crow-facts {
+  margin: auto;
+  margin-top: 2rem;
+  width: 25rem;
+  border: 2px solid white;
+  font-family: "Fira Code", sans-serif;
+  color: white;
+  padding: 1rem;
+}
+
+.crow-facts p {
+  margin: 0;
+}
+
+.crow-facts h4 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.crow-facts h3 {
+  text-align: right;
+  margin: 0;
+}
+
+.social-media {
+  color: white;
+  position: absolute;
+  top: 2rem;
+  left: 0.25rem;
+}
+
+.vertical-line {
+  border-left: 2px solid white;
+  height: 20rem;
+  margin-left: 1.25rem;
+}
+
+.social-media div i {
+  margin: 0.25rem 0;
+}
+
+.fa-discord-style {
+  position: relative;
+  right: 0.25rem;
+}
+
+@media screen and (min-width: 768px) {
+  .social-media {
+    top: 2rem;
+    left: 1rem;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .social-media {
+    top: 2rem;
+    left: 10rem;
+  }
+}
