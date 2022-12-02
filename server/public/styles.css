@@ -1,0 +1,107 @@
+body {
+  background-color: #282c33;
+}
+
+.nav-bar-style {
+  margin-top: 1.5rem;
+  margin-left: 0;
+  font-size: 1.5rem;
+  color: white;
+  font-family: "Zen Kurenaido", "Courier New", Courier, monospace;
+}
+
+.logo-style {
+  position: relative;
+  top: 0.75rem;
+  left: 0.5rem;
+  height: 4.5rem;
+}
+
+.logo-holder {
+  color: #f39323;
+  font-size: 4rem;
+  margin: 0;
+  margin-top: 1.5rem;
+}
+
+.fa-bars-style {
+  color: white;
+  margin-left: 2rem;
+}
+
+.fa-location-dot {
+  margin-left: 1rem;
+}
+
+.fa-quote-left-style,
+.fa-quote-right-style {
+  color: lightgray;
+  margin: 0 0.5rem;
+}
+
+.team-desciption {
+  color: white;
+  text-align: center;
+  font-family: "Fira Code", sans-serif;
+  word-spacing: 0.5rem;
+  padding: 0 3rem;
+  margin: 1rem 0;
+  font-size: 1.75rem;
+}
+
+.team-img-holder {
+  margin: 1rem 0;
+}
+
+.events-holder {
+  border: 2px solid white;
+  width: 20rem;
+}
+
+.events-header {
+  border-bottom: 2px solid white;
+  padding: 1rem;
+  color: #abb2bf;
+  font-family: "Fira Code", sans-serif;
+  font-size: 1rem;
+}
+
+.events {
+  padding: 0 1rem;
+  color: white;
+  font-family: "Fira Code", sans-serif;
+}
+
+.events h5 {
+  margin: 0.25rem 0;
+  color: #abb2bf;
+}
+
+footer {
+  color: white;
+  margin-top: 5rem;
+  font-size: 0.75rem;
+}
+
+.crow-facts {
+  margin-top: 2rem;
+  width: 25rem;
+  border: 2px solid white;
+  font-family: "Fira Code", sans-serif;
+  color: white;
+  padding: 1rem;
+}
+
+.crow-facts p {
+  margin: 0;
+}
+
+.crow-facts h4 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.crow-facts h3 {
+  text-align: right;
+  margin: 0;
+}
