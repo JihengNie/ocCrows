@@ -8,6 +8,21 @@
   justify-content: center;
 }
 
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-left {
+  display: flex;
+  justify-content: left;
+}
+
+.flex-right {
+  display: flex;
+  justify-content: right;
+}
+
 .column-two-third-always {
   width: calc(200%/3);
 }
