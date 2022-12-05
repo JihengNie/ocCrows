@@ -34,10 +34,12 @@ body {
   color: white;
   top: 3rem;
   margin-right: 1rem;
+  cursor: pointer;
 }
 
 .fa-location-dot {
   margin-left: 1rem;
+  cursor: pointer;
 }
 
 .fa-quote-left-style,
@@ -135,6 +137,22 @@ footer {
 .fa-discord-style {
   position: relative;
   right: 0.25rem;
+}
+
+.sidebar-holder {
+  font-size: 2rem;
+  color: white;
+  font-family: "Zen Kurenaido", sans-serif;
+  width: 100%;
+}
+
+.sidebar-holder ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+.sidebar-holder ul > li {
+  display: inline-block;
 }
 
 @media screen and (min-width: 768px) {
