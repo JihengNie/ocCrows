@@ -9,7 +9,16 @@ export default class PlayersPage extends React.Component {
     return (
       <div className='container'>
         <Header />
-        <PlayerCard/>
+        <div className='row player-card-container'>
+          <PlayerCard/>
+          <PlayerCard />
+          <PlayerCard />
+          <PlayerCard />
+          <PlayerCard />
+          <PlayerCard />
+          <PlayerCard />
+          <PlayerCard />
+        </div>
         <Footer />
       </div>
     );

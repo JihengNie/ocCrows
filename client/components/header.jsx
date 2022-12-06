@@ -27,7 +27,7 @@ export default class Header extends React.Component {
             {this.state.sidebarActive ? <Sidebar /> : null}
           </h1>
           <div className='flex-right'>
-            <i onClick={this.handleHamburgerClick} className="fa-solid fa-bars fa-3x fa-bars-style" />
+            <i onClick={this.handleHamburgerClick} className="fa-solid fa-bars fa-2x fa-bars-style" />
           </div>
         </div>
       </div>

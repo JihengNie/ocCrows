@@ -48,6 +48,7 @@
 .column-full,
 .column-two-third,
 .column-one-third,
+.column-one-fourth,
 .column-half {
   width: 100%;
 }
@@ -60,6 +61,7 @@
   .column-full,
   .column-two-third,
   .column-one-third,
+  .column-one-fourth,
   .column-half {
     padding: 0 0.75rem;
   }
@@ -74,5 +76,9 @@
 
   .column-two-third {
     width: calc(200% / 3);
+  }
+
+  .column-one-fourth {
+    width: 25%;
   }
 }
