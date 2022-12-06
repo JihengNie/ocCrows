@@ -13,6 +13,7 @@ CREATE TABLE "public"."players" (
 	"nickname" TEXT NOT NULL,
 	"number" int NOT NULL,
 	"email" TEXT NOT NULL,
+  "picture" TEXT NOT NULL,
 	"phone" TEXT NOT NULL,
 	CONSTRAINT "players_pk" PRIMARY KEY ("playerId")
 ) WITH (

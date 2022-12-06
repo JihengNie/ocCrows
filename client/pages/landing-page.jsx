@@ -7,11 +7,8 @@ export default class LandingPage extends React.Component {
   render() {
     return (
       <div className='container'>
-        <div className='row flex-left margin-bottom-add-2rem'>
-          <div className='column-full'>
-            <Header/>
-          </div>
-        </div>
+        <Header/>
+
         <div className='row'>
           <div className='column-two-third flex-column'>
             <div>
@@ -58,6 +55,7 @@ export default class LandingPage extends React.Component {
             </div>
           </div>
         </div>
+
         <Footer/>
       </div>
     );
