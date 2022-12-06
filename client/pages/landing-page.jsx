@@ -1,6 +1,19 @@
 import React from 'react';
+import Sidebar from '../components/sidebar';
 
 export default class LandingPage extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      sidebarActive: true
+    };
+    this.handleHamburgerClick = this.handleHamburgerClick.bind(this);
+  }
+
+  handleHamburgerClick() {
+    this.setState({ sidebarActive: !this.state.sidebarActive });
+  }
 
   render() {
     return (
@@ -12,9 +25,10 @@ export default class LandingPage extends React.Component {
                 <img src='/images/Crow_Logo_v3.png' className='logo-style'/>
               </span>
               C Crows
+              {this.state.sidebarActive ? <Sidebar /> : null }
             </h1>
             <div className='flex-right'>
-              <i className="fa-solid fa-bars fa-3x fa-bars-style" />
+              <i onClick={this.handleHamburgerClick} className="fa-solid fa-bars fa-3x fa-bars-style" />
             </div>
           </div>
         </div>
