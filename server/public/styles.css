@@ -140,25 +140,64 @@ footer {
 }
 
 .sidebar-holder {
-  font-size: 2rem;
   color: white;
   font-family: "Zen Kurenaido", sans-serif;
-  width: 100%;
+  margin: 0;
 }
 
 .sidebar-holder ul {
+  display: inline-block;
   list-style-type: none;
   margin: 0;
+  margin-left: 4rem;
+  padding: 0;
 }
 
 .sidebar-holder ul > li {
   display: inline-block;
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+}
+
+.sidebar-holder ul li > a {
+  text-decoration: none;
+  color: white;
 }
 
 @media screen and (min-width: 768px) {
   .social-media {
     top: 2rem;
     left: 1rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .sidebar-holder {
+    display: contents;
+  }
+
+  .sidebar-holder ul {
+    margin-left: 4rem;
+  }
+
+  .sidebar-holder ul > li {
+    font-size: 1.5rem;
+    margin: 0 0.25rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .sidebar-holder {
+    display: contents;
+  }
+
+  .sidebar-holder ul {
+    margin-left: 7rem;
+  }
+
+  .sidebar-holder ul > li {
+    font-size: 2rem;
+    margin: 0 0.5rem;
   }
 }
 

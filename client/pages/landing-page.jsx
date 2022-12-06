@@ -25,7 +25,7 @@ export default class LandingPage extends React.Component {
                 <img src='/images/Crow_Logo_v3.png' className='logo-style'/>
               </span>
               C Crows
-              <Sidebar />
+              {this.state.sidebarActive ? <Sidebar /> : null }
             </h1>
             <div className='flex-right'>
               <i onClick={this.handleHamburgerClick} className="fa-solid fa-bars fa-3x fa-bars-style" />
