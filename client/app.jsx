@@ -1,6 +1,6 @@
 import React from 'react';
-import LandingPage from './landing-page';
-import parseRoute from '.lib/parseRoute';
+import LandingPage from './pages/landing-page';
+import parseRoute from './lib/parseRoute';
 
 export default class App extends React.Component {
 
