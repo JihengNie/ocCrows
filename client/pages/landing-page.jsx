@@ -1,35 +1,15 @@
 import React from 'react';
-import Sidebar from '../components/sidebar';
+import Header from '../components/header';
+import Footer from '../components/footer';
 
 export default class LandingPage extends React.Component {
-
-  constructor(props) {
-    super(props);
-    this.state = {
-      sidebarActive: true
-    };
-    this.handleHamburgerClick = this.handleHamburgerClick.bind(this);
-  }
-
-  handleHamburgerClick() {
-    this.setState({ sidebarActive: !this.state.sidebarActive });
-  }
 
   render() {
     return (
       <div className='container'>
         <div className='row flex-left margin-bottom-add-2rem'>
           <div className='column-full'>
-            <h1 className='logo-holder'>
-              <span>
-                <img src='/images/Crow_Logo_v3.png' className='logo-style'/>
-              </span>
-              C Crows
-              {this.state.sidebarActive ? <Sidebar /> : null }
-            </h1>
-            <div className='flex-right'>
-              <i onClick={this.handleHamburgerClick} className="fa-solid fa-bars fa-3x fa-bars-style" />
-            </div>
+            <Header/>
           </div>
         </div>
         <div className='row'>
@@ -78,16 +58,7 @@ export default class LandingPage extends React.Component {
             </div>
           </div>
         </div>
-        <div className='social-media flex-column flex-center'>
-          <div className='vertical-line' />
-          <div><i className="fa-brands fa-2x fa-youtube" /></div>
-          <div><i className="fa-solid fa-2x fa-image" /></div>
-          <div><i className="fa-brands fa-2x fa-discord fa-discord-style" /></div>
-          <div><i className="fa-brands fa-2x fa-instagram" /></div>
-        </div>
-        <footer>
-          <p> &copy; Copyright 2022. Made by Gooogl3</p>
-        </footer>
+        <Footer/>
       </div>
     );
   }
