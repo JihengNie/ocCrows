@@ -20,10 +20,12 @@ export default class Header extends React.Component {
       <div className='row flex-left margin-bottom-add-2rem'>
         <div className='column-full'>
           <h1 className='logo-holder'>
-            <span>
-              <img src='/images/Crow_Logo_v3.png' className='logo-style' />
-            </span>
-            C Crows
+            <a className='logo-styling-remove' href='#'>
+              <span>
+                <img src='/images/Crow_Logo_v3.png' className='logo-style' />
+              </span>
+              C Crows
+            </a>
             {this.state.sidebarActive ? <Sidebar /> : null}
           </h1>
           <div className='flex-right'>

@@ -35,6 +35,10 @@
   width: 50%;
 }
 
+.column-full-always {
+  width: 100%;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;

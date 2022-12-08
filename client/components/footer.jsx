@@ -10,7 +10,7 @@ export default function Footer(props) {
         <div><i className="fa-brands fa-2x fa-discord fa-discord-style" /></div>
         <div><i className="fa-brands fa-2x fa-instagram" /></div>
       </div>
-      <p> &copy; Copyright 2022. Made by Gooogl3</p>
+      <p className='copyright-style'> &copy; Copyright 2022. Made by Gooogl3</p>
     </footer>
   );
 }
