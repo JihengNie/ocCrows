@@ -168,7 +168,7 @@ footer {
   background-color: #808080;
   text-align: center;
   margin: 1rem 0;
-  border-radius: 16px;
+  border-radius: 8px;
 }
 
 .player-card-image-holder {
@@ -178,7 +178,9 @@ footer {
 .player-card-image-holder img {
   object-fit: fill;
   width: 100%;
-  padding: 1.25rem;
+  max-width: 30rem;
+  max-height: 30rem;
+  padding: 1.5rem;
   padding-bottom: 0;
 }
 
@@ -186,9 +188,48 @@ footer {
   margin: 0 3rem;
 }
 
+.player-card-text-holder {
+  background-color: black;
+  font-family: Inter, sans-serif;
+  border-radius: 10px 10px 0 0;
+  padding-bottom: 0.25rem;
+}
+
+.player-card-name-style {
+  position: relative;
+  color: #dee2e6;
+  right: 2rem;
+}
+
+.player-card-number-style {
+  color: #f39323;
+  position: relative;
+  right: 1.75rem;
+  font-size: 2rem;
+}
+
+.player-card-nickname-style {
+  color: #dee2e6;
+  position: relative;
+  bottom: 1rem;
+}
+
 @media screen and (min-width: 400px) {
   .logo-holder {
     font-size: 4rem;
+  }
+
+  .player-card-number-style {
+    right: 2rem;
+    font-size: 3rem;
+  }
+
+  .player-card-name-style {
+    font-size: 2rem;
+  }
+
+  .player-card-nickname-style {
+    font-size: 1.5rem;
   }
 }
 
@@ -196,6 +237,20 @@ footer {
   .social-media {
     top: 2rem;
     left: 1rem;
+  }
+
+  .player-card-number-style {
+    right: 1.5rem;
+    top: 0.5rem;
+    font-size: 2.5rem;
+  }
+
+  .player-card-name-style {
+    font-size: 1.5rem;
+  }
+
+  .player-card-nickname-style {
+    font-size: 1rem;
   }
 }
 
@@ -218,6 +273,20 @@ footer {
   .sidebar-holder ul > li {
     font-size: 1.75rem;
     margin: 0 0.5rem;
+  }
+
+  .player-card-number-style {
+    right: 2rem;
+    top: 0.5rem;
+    font-size: 3rem;
+  }
+
+  .player-card-name-style {
+    font-size: 2rem;
+  }
+
+  .player-card-nickname-style {
+    font-size: 1.5rem;
   }
 }
 

@@ -7,11 +7,15 @@ export default class PlayerCard extends React.Component {
       <div className='column-one-third'>
         <div className='player-card-holder'>
           <div className='player-card-image-holder'>
-            <img src='/images/Zamin.gif'/>
+            <img src={this.props.imgSrc}/>
+            <div className='player-card-text-holder'>
+              <h1>
+                <span className='player-card-number-style'># {this.props.number} </span>
+                <span className='player-card-name-style'> {this.props.name} </span>
+              </h1>
+              <h3 className='player-card-nickname-style'><em> AKA:  &quot;{this.props.nickname}&quot;</em></h3>
+            </div>
           </div>
-          <h1> Player Name</h1>
-          <h2> Player Number</h2>
-          <h3> Player Nickname </h3>
         </div>
       </div>
     );
