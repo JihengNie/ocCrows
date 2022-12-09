@@ -7,8 +7,8 @@ export default class SectionTitle extends React.Component {
         <div className='row'>
           <div className='column-full-always'>
             <h1 className='section-title-style' id={this.props.text}>
-              #{this.props.text}
-              <span className='horzontial-line' />
+              <span className='section-title-style-text'> #{this.props.text}</span>
+              <hr className='horzontial-line'/>
             </h1>
           </div>
         </div>

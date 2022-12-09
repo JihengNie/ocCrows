@@ -11,7 +11,7 @@ export default class SchedulePage extends React.Component {
         <Header />
         <SectionTitle text='2019'/>
         <SectionTitle text='2020' />
-        <SectionTitle text='Soomething Longger text' />
+        <SectionTitle text='Something Longer text' />
         <Footer />
       </div>
     );

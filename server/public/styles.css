@@ -136,11 +136,12 @@ footer {
 }
 
 .horzontial-line {
-  border-top: 4px solid #f39323;
-  padding: 0 100%;
+  background-color: #f39323;
+  height: 5px;
+  border: none;
   position: relative;
-  top: 1.75rem;
-  left: 1rem;
+  bottom: 3.25rem;
+  z-index: 1;
 }
 
 .social-media div i {
@@ -233,6 +234,13 @@ footer {
   margin-left: 3rem;
 }
 
+.section-title-style-text {
+  background-color: #282c33;
+  position: relative;
+  padding-right: 2rem;
+  z-index: 2;
+}
+
 .copyright-style {
   float: left;
   padding-bottom: 10px;
@@ -323,5 +331,4 @@ footer {
     top: 2rem;
     left: 10rem;
   }
-}
 }
