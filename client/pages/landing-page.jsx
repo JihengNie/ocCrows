@@ -45,7 +45,7 @@ export default class LandingPage extends React.Component {
               </div>
             </div>
             <div className='crow-facts'>
-              <h4> Crow fact #221:</h4>
+              <h4>Crow fact #221:</h4>
               <p>
                 <i className="fa-solid fa-quote-left fa-quote-left-style" />
                 Crows area physically incapable of keeping white jerseys clean
