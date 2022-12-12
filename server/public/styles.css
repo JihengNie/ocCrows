@@ -262,6 +262,24 @@ footer {
   width: 100%;
 }
 
+.section-text-holder {
+  color: white;
+  margin-left: 4rem;
+  border: solid white;
+  padding: 0 1rem;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.section-text-title {
+  font-size: 1.5rem;
+  border-bottom: solid white;
+}
+
+.section-text-content {
+  font-size: larger;
+}
+
 @media screen and (min-width: 400px) {
   .logo-holder {
     font-size: 4rem;
