@@ -244,9 +244,9 @@ footer {
 }
 
 .caw {
-  margin-left: 10rem;
+  margin-left: 4rem;
   color: white;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .orange {
@@ -303,6 +303,12 @@ footer {
 }
 
 @media screen and (min-width: 800px) {
+  .caw {
+    margin-left: 4rem;
+    color: white;
+    font-size: 3rem;
+  }
+
   .sidebar-holder ul {
     margin-left: 4rem;
   }
@@ -314,6 +320,11 @@ footer {
 }
 
 @media screen and (min-width: 1000px) {
+  .caw {
+    margin-left: 10rem;
+    font-size: 3rem;
+  }
+
   .sidebar-holder ul {
     margin-left: 8rem;
   }
