@@ -2,6 +2,8 @@ import React from 'react';
 import LandingPage from './pages/landing-page';
 import parseRoute from './lib/parseRoute';
 import PlayersPage from './pages/players-page';
+import SchedulePage from './pages/schedule-page';
+import HistoryPage from './pages/history-page';
 
 export default class App extends React.Component {
 
@@ -24,6 +26,8 @@ export default class App extends React.Component {
   renderPage() {
     const route = this.state.route.path;
     if (route === 'players') return <PlayersPage/>;
+    else if (route === 'schedule') return <SchedulePage />;
+    else if (route === 'history') return <HistoryPage />;
     else return <LandingPage />;
 
   }

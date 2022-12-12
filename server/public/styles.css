@@ -14,6 +14,11 @@ body {
   font-family: "Zen Kurenaido", "Courier New", Courier, monospace;
 }
 
+.logo-styling-remove {
+  text-decoration: none;
+  color: #f39323;
+}
+
 .logo-style {
   position: relative;
   top: 0.75rem;
@@ -130,6 +135,15 @@ footer {
   margin-left: 0.85rem;
 }
 
+.horzontial-line {
+  background-color: #f39323;
+  height: 5px;
+  border: none;
+  position: relative;
+  bottom: 3.25rem;
+  z-index: 1;
+}
+
 .social-media div i {
   margin: 0.25rem 0;
 }
@@ -214,6 +228,40 @@ footer {
   bottom: 1rem;
 }
 
+.section-title-style {
+  color: #f39323;
+  font-size: 3rem;
+  margin-left: 3rem;
+}
+
+.section-title-style-text {
+  font-family: "Fira Code", sans-serif;
+  background-color: #282c33;
+  color: white;
+  position: relative;
+  padding-right: 2rem;
+  z-index: 2;
+}
+
+.caw {
+  margin-left: 4rem;
+  color: white;
+  font-size: 2rem;
+}
+
+.orange {
+  color: #f39323;
+}
+
+.copyright-style {
+  float: left;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+}
+
 @media screen and (min-width: 400px) {
   .logo-holder {
     font-size: 4rem;
@@ -255,6 +303,12 @@ footer {
 }
 
 @media screen and (min-width: 800px) {
+  .caw {
+    margin-left: 4rem;
+    color: white;
+    font-size: 3rem;
+  }
+
   .sidebar-holder ul {
     margin-left: 4rem;
   }
@@ -266,6 +320,11 @@ footer {
 }
 
 @media screen and (min-width: 1000px) {
+  .caw {
+    margin-left: 10rem;
+    font-size: 3rem;
+  }
+
   .sidebar-holder ul {
     margin-left: 8rem;
   }

@@ -6,7 +6,7 @@ export default class Header extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      sidebarActive: true
+      sidebarActive: false
     };
     this.handleHamburgerClick = this.handleHamburgerClick.bind(this);
   }
@@ -16,18 +16,21 @@ export default class Header extends React.Component {
   }
 
   render() {
+    const caw = <span className='caw'> --- Caw Caw Caw --- </span>;
     return (
       <div className='row flex-left margin-bottom-add-2rem'>
         <div className='column-full'>
           <h1 className='logo-holder'>
-            <span>
-              <img src='/images/Crow_Logo_v3.png' className='logo-style' />
-            </span>
-            C Crows
-            {this.state.sidebarActive ? <Sidebar /> : null}
+            <a className='logo-styling-remove' href='#'>
+              <span>
+                <img src='/images/Crow_Logo_v3.png' className='logo-style' />
+              </span>
+              C Crows
+            </a>
+            {this.state.sidebarActive ? <Sidebar /> : caw}
           </h1>
           <div className='flex-right'>
-            <i onClick={this.handleHamburgerClick} className="fa-solid fa-bars fa-2x fa-bars-style" />
+            <i onClick={this.handleHamburgerClick} className="fa-solid fa-bars fa-2x fa-bars-style orange" />
           </div>
         </div>
       </div>
