@@ -2,6 +2,10 @@ body {
   background-color: #282c33;
 }
 
+i {
+  color: white;
+}
+
 .margin-bottom-add-2rem {
   margin-bottom: 2rem;
 }
@@ -278,6 +282,17 @@ footer {
 
 .section-text-content {
   font-size: larger;
+}
+
+.contact-text-holder {
+  color: white;
+  border: solid white;
+  text-align: center;
+}
+
+.contact-text-holder h1,
+.contact-text-holder h4, {
+  margin: 0;
 }
 
 @media screen and (min-width: 400px) {
