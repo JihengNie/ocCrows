@@ -195,6 +195,7 @@ footer {
 
 .player-card-image-holder {
   margin: 0;
+  margin-bottom: 4rem;
   max-width: 30rem;
   max-height: 30rem;
 }
