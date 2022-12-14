@@ -198,8 +198,9 @@ footer {
 }
 
 .player-card-image-holder img {
-  object-fit: fill;
+  object-fit: contain;
   width: 100%;
+  height: 100%;
   max-width: 30rem;
   max-height: 30rem;
   padding: 1.5rem;
