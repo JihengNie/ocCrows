@@ -10,7 +10,7 @@ export default class SchedulePage extends React.Component {
       <div className='container'>
         <Header />
         <SectionTitle text='SD Slammer 2022'/>
-        <div className='schedules-text-holder'>
+        <div className='schedules-text-holder column-half'>
           <table>
             <thead>
               June 25, 2022
@@ -65,7 +65,7 @@ export default class SchedulePage extends React.Component {
           </table>
         </div>
         <SectionTitle text='Shootout 2022' />
-        <div className='schedules-text-holder'>
+        <div className='schedules-text-holder column-half'>
           <table>
             <thead>
               July 23, 2022
