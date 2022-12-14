@@ -17,7 +17,7 @@ export default class LandingPage extends React.Component {
               </h1>
             </div>
             <div className='team-img-holder flex-center '>
-              <img src='/images/Zamin.gif'/>
+              <img src='/images/sectionals.jpg'/>
             </div>
           </div>
           <div className='column-one-third'>
@@ -55,7 +55,6 @@ export default class LandingPage extends React.Component {
             </div>
           </div>
         </div>
-
         <Footer/>
       </div>
     );

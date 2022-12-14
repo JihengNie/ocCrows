@@ -70,6 +70,10 @@ i {
   margin: 1rem 0;
 }
 
+.team-img-holder img {
+  width: 100%;
+}
+
 .events-holder {
   border: 2px solid white;
   width: 20rem;
