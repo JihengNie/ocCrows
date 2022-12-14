@@ -15,6 +15,8 @@ export default class PlayersPage extends React.Component {
           <PlayerCard number={2} name="Issac" nickname="OtherName" imgSrc='/team/Issac.jpg' />
           <PlayerCard number={3} name="Player baz" nickname="YesName" imgSrc='/team/moose.jpg' />
           <PlayerCard number={4} name="Player etc" nickname="NameName" imgSrc='/team/reno.jpg' />
+          <PlayerCard number={0} name="Chris" nickname="Dino" imgSrc='/team/chris.jpg' />
+
         </div>
         <Footer />
       </div>
