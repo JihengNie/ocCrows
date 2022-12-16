@@ -70,6 +70,10 @@ i {
   margin: 1rem 0;
 }
 
+.team-img-holder img {
+  width: 100%;
+}
+
 .events-holder {
   border: 2px solid white;
   width: 20rem;
@@ -187,19 +191,23 @@ footer {
   text-align: center;
   margin: 1rem 0;
   border-radius: 8px;
+  max-width: 30rem;
+  max-height: 30rem;
+  margin-bottom: 6rem;
 }
 
 .player-card-image-holder {
   margin: 0;
+  max-width: 30rem;
+  max-height: 30rem;
 }
 
 .player-card-image-holder img {
-  object-fit: fill;
+  object-fit: cover;
   width: 100%;
-  max-width: 30rem;
-  max-height: 30rem;
+  height: 30rem;
   padding: 1.5rem;
-  padding-bottom: 0;
+  padding-bottom: 5rem;
 }
 
 .player-card-container {
@@ -211,17 +219,22 @@ footer {
   font-family: Inter, sans-serif;
   border-radius: 10px 10px 0 0;
   padding-bottom: 0.25rem;
+  position: relative;
+  bottom: 3rem;
+}
+
+.player-card-text-holder h1 {
+  margin: 0;
+  position: relative;
+  right: 2rem;
 }
 
 .player-card-name-style {
-  position: relative;
   color: #dee2e6;
-  right: 2rem;
 }
 
 .player-card-number-style {
   color: #f39323;
-  position: relative;
   right: 1.75rem;
   font-size: 2rem;
 }

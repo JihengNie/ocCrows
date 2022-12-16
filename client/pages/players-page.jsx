@@ -10,11 +10,12 @@ export default class PlayersPage extends React.Component {
       <div className='container'>
         <Header />
         <div className='row player-card-container'>
-          <PlayerCard number={0} name="Jiheng Nie" nickname="Google" imgSrc='/images/Zamin.gif'/>
-          <PlayerCard number={1} name="Player foo" nickname="Nickname" imgSrc='/images/Zamin.gif' />
-          <PlayerCard number={2} name="Player bar" nickname="OtherName" imgSrc='/images/Zamin.gif' />
-          <PlayerCard number={3} name="Player baz" nickname="YesName" imgSrc='/images/Zamin.gif' />
-          <PlayerCard number={4} name="Player etc" nickname="NameName" imgSrc='/images/Zamin.gif' />
+          <PlayerCard number={1} name="Jacob" nickname="Classic" imgSrc='/team/classics.jpg' />
+          <PlayerCard number={2} name="Issac" nickname="OtherName" imgSrc='/team/Issac.jpg' />
+          <PlayerCard number={0} name="Chris" nickname="Dino" imgSrc='/team/chris.jpg'/>
+          <PlayerCard number={3} name="Player baz" nickname="YesName" imgSrc='/team/moose.jpg' />
+          <PlayerCard number={0} name="Chris" nickname="Dino" imgSrc='/team/chris.jpg' />
+          <PlayerCard number={4} name="Player etc" nickname="NameName" imgSrc='/team/reno.jpg' />
         </div>
         <Footer />
       </div>
