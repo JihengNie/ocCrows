@@ -334,6 +334,59 @@ footer {
   padding: 0 2rem;
 }
 
+.logo-circle {
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 50%;
+  color: #282c33;
+}
+
+.oc-ulti {
+  width: 3.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.zamin-img-holder img {
+  width: 13rem;
+}
+
+.margin-sides-4rem {
+  margin: 1rem 4rem;
+}
+
+.contact-form-holder-styles {
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.contact-form-styles input,
+.contact-form-styles textarea {
+  margin: auto;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+  background: transparent;
+  border: 3px solid gray;
+  color: white;
+}
+
+.contact-form-styles textarea {
+  height: 8rem;
+}
+
+.contact-form-styles input::placeholder,
+.contact-form-styles textarea::placeholder {
+  color: gray;
+}
+
+.contact-form-input-styles {
+  width: 100%;
+}
+
 @media screen and (min-width: 400px) {
   .logo-holder {
     font-size: 4rem;
@@ -372,6 +425,10 @@ footer {
   .player-card-nickname-style {
     font-size: 1rem;
   }
+
+  .zamin-img-holder img {
+    width: 15rem;
+  }
 }
 
 @media screen and (min-width: 800px) {
@@ -392,6 +449,10 @@ footer {
 }
 
 @media screen and (min-width: 1000px) {
+  .zamin-img-holder img {
+    width: 20rem;
+  }
+
   .caw {
     margin-left: 10rem;
     font-size: 3rem;
