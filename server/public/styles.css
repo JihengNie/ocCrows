@@ -372,6 +372,7 @@ footer {
   background: transparent;
   border: 3px solid gray;
   color: white;
+  transition: 1s;
 }
 
 .contact-form-styles textarea {
@@ -385,6 +386,11 @@ footer {
 
 .contact-form-input-styles {
   width: 100%;
+}
+
+.submit-button:hover {
+  border: 3px solid #f39323;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 400px) {

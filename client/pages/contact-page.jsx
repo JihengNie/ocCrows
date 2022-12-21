@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../components/header';
 import Footer from '../components/footer';
+import ContactForm from '../components/contact-form';
 
 export default class ContactPage extends React.Component {
 
@@ -32,36 +33,7 @@ export default class ContactPage extends React.Component {
             </div>
           </div>
           <div className='column-two-third'>
-            <div className='contact-form-holder-styles'>
-              <h1> Get in touch! </h1>
-              <form className='contact-form-styles'>
-                <input
-                  className='contact-form-input-styles'
-                  type='text'
-                  autoFocus
-                  placeholder='Name'
-                  autoComplete="off"
-                  required
-                />
-                <input
-                  className='contact-form-input-styles'
-                  type='email'
-                  placeholder='Email'
-                  autoComplete="off"
-                  required
-                />
-                <textarea
-                  className='contact-form-input-styles'
-                  type='textarea'
-                  placeholder='Message'
-                  autoComplete="off"
-                  required
-                />
-                <input
-                  type='submit'
-                />
-              </form>
-            </div>
+            <ContactForm/>
           </div>
         </div>
         <Footer />
