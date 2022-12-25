@@ -4,17 +4,6 @@ import AppContext from '../lib/app-context';
 
 export default class Header extends React.Component {
 
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     sidebarActive: false
-  //   };
-  //   this.handleHamburgerClick = this.handleHamburgerClick.bind(this);
-  // }
-
-  // handleHamburgerClick() {
-  //   this.setState({ sidebarActive: !this.state.sidebarActive });
-  // }
   render() {
     const { sidebarActive, handleHamburgerClick } = this.context;
     const caw = <span className='caw'> --- Caw Caw Caw --- </span>;

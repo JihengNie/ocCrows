@@ -35,8 +35,8 @@ CREATE TABLE "public"."contact" (
 
 CREATE TABLE "public"."facts" (
 	"number" serial NOT NULL UNIQUE,
-	"text" TEXT NOT NULL,
-	"author" TEXT NOT NULL
+	"name" TEXT NOT NULL,
+	"fact" TEXT NOT NULL
 ) WITH (
   OIDS=FALSE
 );

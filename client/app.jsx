@@ -6,6 +6,7 @@ import SchedulePage from './pages/schedule-page';
 import HistoryPage from './pages/history-page';
 import ContactPage from './pages/contact-page';
 import AppContext from './lib/app-context';
+import CrowFacts from './pages/crow-fact-page';
 
 export default class App extends React.Component {
 
@@ -37,6 +38,7 @@ export default class App extends React.Component {
     else if (route === 'schedule') return <SchedulePage />;
     else if (route === 'history') return <HistoryPage />;
     else if (route === 'contact') return <ContactPage />;
+    else if (route === 'crow-facts') return <CrowFacts />;
     else return <LandingPage />;
 
   }

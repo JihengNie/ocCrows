@@ -50,6 +50,24 @@ app.post('/api/uploads/contact', (req, res, next) => {
     })
     .catch(err => next(err));
 });
+
+app.post('/api/uploads/crow-facts', (req, res, next) => {
+  const { name, fact } = req.body;
+  if (!fact) {
+    throw new ClientError(400, 'Fact is empty');
+  }
+  const sql = `
+    insert into "facts" ("name", "fact")
+    values ($1, $2)
+    returning *
+    `;
+  const params = [name, fact];
+  db.query(sql, params)
+    .then(result => {
+      res.json(result.rows[0]);
+    })
+    .catch(err => next(err));
+});
 // ---------------------------- END REQUESTS ---------------------//
 
 app.use(errorMiddleware);
