@@ -1,21 +1,22 @@
 import React from 'react';
 import Sidebar from '../components/sidebar';
+import AppContext from '../lib/app-context';
 
 export default class Header extends React.Component {
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      sidebarActive: false
-    };
-    this.handleHamburgerClick = this.handleHamburgerClick.bind(this);
-  }
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {
+  //     sidebarActive: false
+  //   };
+  //   this.handleHamburgerClick = this.handleHamburgerClick.bind(this);
+  // }
 
-  handleHamburgerClick() {
-    this.setState({ sidebarActive: !this.state.sidebarActive });
-  }
-
+  // handleHamburgerClick() {
+  //   this.setState({ sidebarActive: !this.state.sidebarActive });
+  // }
   render() {
+    const { sidebarActive, handleHamburgerClick } = this.context;
     const caw = <span className='caw'> --- Caw Caw Caw --- </span>;
     return (
       <div className='row flex-left margin-bottom-add-2rem'>
@@ -27,13 +28,15 @@ export default class Header extends React.Component {
               </span>
               C Crows
             </a>
-            {this.state.sidebarActive ? <Sidebar /> : caw}
+            {sidebarActive ? <Sidebar /> : caw}
           </h1>
           <div className='flex-right'>
-            <i onClick={this.handleHamburgerClick} className="fa-solid fa-bars fa-2x fa-bars-style orange" />
+            <i onClick={handleHamburgerClick} className="fa-solid fa-bars fa-2x fa-bars-style orange" />
           </div>
         </div>
       </div>
     );
   }
 }
+
+Header.contextType = AppContext;

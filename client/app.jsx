@@ -5,15 +5,22 @@ import PlayersPage from './pages/players-page';
 import SchedulePage from './pages/schedule-page';
 import HistoryPage from './pages/history-page';
 import ContactPage from './pages/contact-page';
+import AppContext from './lib/app-context';
 
 export default class App extends React.Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      route: parseRoute(window.location.hash)
+      route: parseRoute(window.location.hash),
+      sidebarActive: false
     };
     this.renderPage = this.renderPage.bind(this);
+    this.handleHamburgerClick = this.handleHamburgerClick.bind(this);
+  }
+
+  handleHamburgerClick() {
+    this.setState({ sidebarActive: !this.state.sidebarActive });
   }
 
   componentDidMount() {
@@ -35,10 +42,13 @@ export default class App extends React.Component {
   }
 
   render() {
+    const { sidebarActive } = this.state;
+    const { handleHamburgerClick } = this;
+    const contextValue = { sidebarActive, handleHamburgerClick };
     return (
-      <>
+      <AppContext.Provider value={contextValue}>
         {this.renderPage()}
-      </>
+      </AppContext.Provider>
     );
   }
 }
