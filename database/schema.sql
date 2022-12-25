@@ -30,3 +30,13 @@ CREATE TABLE "public"."contact" (
 ) WITH (
   OIDS=FALSE
 );
+
+
+
+CREATE TABLE "public"."facts" (
+	"number" serial NOT NULL UNIQUE,
+	"text" TEXT NOT NULL,
+	"author" TEXT NOT NULL
+) WITH (
+  OIDS=FALSE
+);
