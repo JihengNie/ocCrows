@@ -52,8 +52,12 @@ export default class CrowFactDisplay extends React.Component {
     }
     return (
       <table border="1">
-        <tr> {tableHeaderHTML} </tr>
-        {tableRowHTML}
+        <thead>
+          <tr>{tableHeaderHTML}</tr>
+        </thead>
+        <tbody>
+          {tableRowHTML}
+        </tbody>
       </table>
     );
   }
