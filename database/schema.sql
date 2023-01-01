@@ -13,9 +13,30 @@ CREATE TABLE "public"."players" (
 	"nickname" TEXT NOT NULL,
 	"number" int NOT NULL,
 	"email" TEXT NOT NULL,
-  "picture" TEXT NOT NULL,
 	"phone" TEXT NOT NULL,
+	"season" int NOT NULL,
+	"picture" TEXT NOT NULL,
 	CONSTRAINT "players_pk" PRIMARY KEY ("playerId")
+) WITH (
+  OIDS=FALSE
+);
+
+
+
+CREATE TABLE "public"."contact" (
+	"name" TEXT NOT NULL,
+	"email" TEXT NOT NULL,
+	"message" TEXT NOT NULL
+) WITH (
+  OIDS=FALSE
+);
+
+
+
+CREATE TABLE "public"."facts" (
+	"number" serial NOT NULL UNIQUE,
+	"name" TEXT NOT NULL,
+	"fact" TEXT NOT NULL
 ) WITH (
   OIDS=FALSE
 );
