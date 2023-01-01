@@ -38,12 +38,12 @@ export default class CrowFactDisplay extends React.Component {
     const tableRowHTML = [];
     for (let i = 0; i < tableHeader.length; i++) {
       tableHeaderHTML.push(
-        <th> {tableHeader[i]} </th>
+        <th key={i}> {tableHeader[i]} </th>
       );
     }
     for (let i = 0; i < object.length; i++) {
       tableRowHTML.push(
-        <tr>
+        <tr key={i}>
           <td> {object[i].number} </td>
           <td> {object[i].name} </td>
           <td> {object[i].fact} </td>
