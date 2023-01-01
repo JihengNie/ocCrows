@@ -20,9 +20,13 @@ export default class CrowFactDisplay extends React.Component {
     fetch('/api/crow-facts', requestObj)
       .then(result => result.json())
       .then(result => {
-        this.setState({
-          crowFacts: result
-        });
+        if (result.length > 0) {
+          this.setState({
+            crowFacts: result
+          });
+        } else {
+          alert('No facts avilable');
+        }
       })
       .catch(err => console.error(err));
   }
@@ -47,7 +51,7 @@ export default class CrowFactDisplay extends React.Component {
       );
     }
     return (
-      <table>
+      <table border="1">
         <tr> {tableHeaderHTML} </tr>
         {tableRowHTML}
       </table>
@@ -55,11 +59,13 @@ export default class CrowFactDisplay extends React.Component {
   }
 
   render() {
-    const test = this.state.crowFacts ? this.createTable(this.state.crowFacts) : null;
+    const factTable = this.state.crowFacts ? this.createTable(this.state.crowFacts) : null;
     return (
       <div className='container'>
-        <button onClick={this.handleButtonClick}> A button </button>
-        {test}
+        <button onClick={this.handleButtonClick}> View Current Facts </button>
+        <div className='crow-fact-table-styles'>
+          {factTable}
+        </div>
       </div>
     );
   }

@@ -393,6 +393,25 @@ footer {
   cursor: pointer;
 }
 
+.crow-fact-table-styles {
+  width: 100%;
+  color: white;
+}
+
+.crow-fact-table-styles table {
+  margin: auto;
+  border-color: #808080;
+  margin-top: 3rem;
+}
+
+.crow-fact-table-styles table th {
+  text-align: center;
+}
+
+.crow-fact-table-styles table td {
+  padding: 0 3rem;
+}
+
 @media screen and (min-width: 400px) {
   .logo-holder {
     font-size: 4rem;
