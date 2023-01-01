@@ -32,6 +32,18 @@ app.get('/api/players', (req, res, next) => {
     .catch(err => next(err));
 });
 
+app.get('/api/crow-facts', (req, res, next) => {
+  const sql = `
+  SELECT *
+  FROM "facts"
+  `;
+  db.query(sql)
+    .then(result => {
+      res.json(result.rows);
+    })
+    .catch(err => next(err));
+});
+
 // ---------------------------- Post Requests---------------------//
 app.post('/api/uploads/contact', (req, res, next) => {
   const { name, email, message } = req.body;

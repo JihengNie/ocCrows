@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../components/header';
 import Footer from '../components/footer';
+import CrowFactDisplay from '../components/crow-facts-view';
 
 export default class CrowFacts extends React.Component {
 
@@ -80,6 +81,7 @@ export default class CrowFacts extends React.Component {
             />
           </form>
         </div>
+        <CrowFactDisplay/>
         <Footer />
       </div>
     );
