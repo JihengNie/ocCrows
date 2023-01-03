@@ -7,6 +7,7 @@ import HistoryPage from './pages/history-page';
 import ContactPage from './pages/contact-page';
 import AppContext from './lib/app-context';
 import CrowFacts from './pages/crow-fact-page';
+import Messages from './pages/messages';
 
 export default class App extends React.Component {
 
@@ -39,6 +40,7 @@ export default class App extends React.Component {
     else if (route === 'history') return <HistoryPage />;
     else if (route === 'contact') return <ContactPage />;
     else if (route === 'crow-facts') return <CrowFacts />;
+    else if (route === 'messages') return <Messages />;
     else return <LandingPage />;
 
   }
